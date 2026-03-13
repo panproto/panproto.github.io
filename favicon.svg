@@ -1,0 +1,28 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="120" height="120" fill="#0c0b0a"/>
+
+  <!-- Edges: outer pentagon -->
+  <line x1="60" y1="16" x2="102" y2="46" stroke="#8a857e" stroke-width="2.5"/>
+  <line x1="102" y1="46" x2="86" y2="96" stroke="#8a857e" stroke-width="2.5"/>
+  <line x1="86" y1="96" x2="34" y2="96" stroke="#8a857e" stroke-width="2.5"/>
+  <line x1="34" y1="96" x2="18" y2="46" stroke="#8a857e" stroke-width="2.5"/>
+  <line x1="18" y1="46" x2="60" y2="16" stroke="#8a857e" stroke-width="2.5"/>
+
+  <!-- Inner star edge -->
+  <line x1="60" y1="16" x2="86" y2="96" stroke="#8a857e" stroke-width="2.5"/>
+
+  <!-- Morphism arrows (dashed) -->
+  <path d="M 60 16 Q 60 56 34 96" stroke="#c4a882" stroke-width="3" fill="none" opacity="0.5" stroke-dasharray="4 6"/>
+  <path d="M 102 46 Q 60 56 34 96" stroke="#c4a882" stroke-width="3" fill="none" opacity="0.5" stroke-dasharray="4 6"/>
+  <path d="M 18 46 Q 60 56 86 96" stroke="#c4a882" stroke-width="3" fill="none" opacity="0.5" stroke-dasharray="4 6"/>
+  <path d="M 60 16 Q 45 56 18 46" stroke="#c4a882" stroke-width="3" fill="none" opacity="0.5" stroke-dasharray="4 6"/>
+  <path d="M 102 46 Q 75 56 60 16" stroke="#c4a882" stroke-width="3" fill="none" opacity="0.3" stroke-dasharray="4 6"/>
+
+  <!-- Nodes (on top, opaque, larger) -->
+  <circle cx="60" cy="16" r="6" fill="#c4a882"/>
+  <circle cx="102" cy="46" r="6" fill="#c4a882"/>
+  <circle cx="86" cy="96" r="6" fill="#c4a882"/>
+  <circle cx="34" cy="96" r="6" fill="#c4a882"/>
+  <circle cx="18" cy="46" r="6" fill="#c4a882"/>
+</svg>
