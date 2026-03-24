@@ -1,0 +1,6 @@
+<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- Panproto icon 16px: three module bars, centered -->
+  <rect x="1.5" y="2" width="3" height="12" rx="0.5" fill="#e8a020"/>
+  <rect x="5.5" y="2" width="5" height="12" rx="0.5" fill="#e8a020"/>
+  <rect x="11.5" y="2" width="3" height="12" rx="0.5" fill="#e8a020"/>
+</svg>

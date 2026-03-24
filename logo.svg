@@ -1,28 +1,35 @@
 <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
+  <!-- Panproto logo: eurorack case front view -->
   <rect width="120" height="120" fill="#0c0b0a"/>
-
-  <!-- Edges: outer pentagon -->
-  <line x1="60" y1="16" x2="102" y2="46" stroke="#8a857e" stroke-width="1"/>
-  <line x1="102" y1="46" x2="86" y2="96" stroke="#8a857e" stroke-width="1"/>
-  <line x1="86" y1="96" x2="34" y2="96" stroke="#8a857e" stroke-width="1"/>
-  <line x1="34" y1="96" x2="18" y2="46" stroke="#8a857e" stroke-width="1"/>
-  <line x1="18" y1="46" x2="60" y2="16" stroke="#8a857e" stroke-width="1"/>
-
-  <!-- Inner star edge -->
-  <line x1="60" y1="16" x2="86" y2="96" stroke="#8a857e" stroke-width="1"/>
-
-  <!-- Morphism arrows (dashed) -->
-  <path d="M 60 16 Q 60 56 34 96" stroke="#c4a882" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4 6"/>
-  <path d="M 102 46 Q 60 56 34 96" stroke="#c4a882" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4 6"/>
-  <path d="M 18 46 Q 60 56 86 96" stroke="#c4a882" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4 6"/>
-  <path d="M 60 16 Q 45 56 18 46" stroke="#c4a882" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4 6"/>
-  <path d="M 102 46 Q 75 56 60 16" stroke="#c4a882" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="4 6"/>
-
-  <!-- Nodes (on top, opaque) -->
-  <circle cx="60" cy="16" r="3.5" fill="#c4a882"/>
-  <circle cx="102" cy="46" r="3.5" fill="#c4a882"/>
-  <circle cx="86" cy="96" r="3.5" fill="#c4a882"/>
-  <circle cx="34" cy="96" r="3.5" fill="#c4a882"/>
-  <circle cx="18" cy="46" r="3.5" fill="#c4a882"/>
+  <rect x="4" y="16" width="112" height="5" rx="2" fill="#8a857e"/>
+  <rect x="4" y="99" width="112" height="5" rx="2" fill="#8a857e"/>
+  <circle cx="10" cy="18.5" r="1.5" fill="#0c0b0a"/>
+  <circle cx="110" cy="18.5" r="1.5" fill="#0c0b0a"/>
+  <circle cx="10" cy="101.5" r="1.5" fill="#0c0b0a"/>
+  <circle cx="110" cy="101.5" r="1.5" fill="#0c0b0a"/>
+  <rect x="8" y="21" width="18" height="78" fill="#c4a882"/>
+  <rect x="28" y="21" width="26" height="78" fill="#c4a882"/>
+  <rect x="56" y="21" width="14" height="78" fill="#c4a882"/>
+  <rect x="72" y="21" width="40" height="78" fill="#c4a882"/>
+  <!-- Module 1 jacks -->
+  <circle cx="17" cy="38" r="2.5" fill="#0c0b0a"/>
+  <circle cx="17" cy="54" r="2.5" fill="#0c0b0a"/>
+  <circle cx="17" cy="84" r="2.5" fill="#0c0b0a"/>
+  <!-- Module 2 jacks -->
+  <circle cx="41" cy="38" r="2.5" fill="#0c0b0a"/>
+  <circle cx="36" cy="62" r="2.5" fill="#0c0b0a"/>
+  <circle cx="46" cy="62" r="2.5" fill="#0c0b0a"/>
+  <circle cx="41" cy="84" r="2.5" fill="#0c0b0a"/>
+  <!-- Module 3 jacks -->
+  <circle cx="63" cy="38" r="2.5" fill="#0c0b0a"/>
+  <circle cx="63" cy="62" r="2.5" fill="#0c0b0a"/>
+  <!-- Module 4 jacks -->
+  <circle cx="85" cy="38" r="2.5" fill="#0c0b0a"/>
+  <circle cx="99" cy="38" r="2.5" fill="#0c0b0a"/>
+  <circle cx="85" cy="62" r="2.5" fill="#0c0b0a"/>
+  <circle cx="99" cy="62" r="2.5" fill="#0c0b0a"/>
+  <circle cx="92" cy="84" r="2.5" fill="#0c0b0a"/>
+  <!-- Patch cables -->
+  <path d="M 17 84 C 24 109 56 109 63 62" stroke="#e8a020" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <path d="M 46 62 C 53 82 78 82 85 62" stroke="#e8a020" stroke-width="3.4" fill="none" stroke-linecap="round"/>
 </svg>
