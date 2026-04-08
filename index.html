@@ -14,8 +14,10 @@
   :root {
     --fg: #ece8e1;
     --fg-dim: #9a9590;
-    --fg-accent: #e8a020;
-    --fg-accent-light: #f0c060;
+    --fg-accent: #e63946;          /* patch-cable red — primary */
+    --fg-accent-light: #f06b76;
+    --fg-accent-2: #4a90d9;        /* patch-cable blue — secondary */
+    --fg-accent-2-light: #7fb4e6;
     --fg-panel: #c4a882;
     --bg: #0c0b0a;
     --bg-card: #141312;
@@ -80,7 +82,7 @@
     width: 600px;
     height: 600px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(232,160,32,0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(230,57,70,0.05) 0%, rgba(74,144,217,0.04) 45%, transparent 70%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -151,16 +153,22 @@
   .logo-wrap svg .jack:nth-child(19) { animation-delay: 0.9s; }
   .logo-wrap svg .jack:nth-child(20) { animation-delay: 0.92s; }
 
-  /* Cables: draw in last, with amber glow */
+  /* Cables: draw in last, red + blue patch cables */
   .logo-wrap svg .cable {
-    stroke: var(--fg-accent);
     stroke-width: 3.4;
     fill: none;
     stroke-linecap: round;
     stroke-dasharray: 200;
     stroke-dashoffset: 200;
     animation: drawCable 1.6s var(--ease-luxury) forwards;
-    filter: drop-shadow(0 0 0.5px rgba(0,0,0,0.35)) drop-shadow(0 0 6px rgba(232,160,32,0.5));
+  }
+  .logo-wrap svg .cable-red {
+    stroke: var(--fg-accent);
+    filter: drop-shadow(0 0 0.5px rgba(0,0,0,0.35)) drop-shadow(0 0 6px rgba(230,57,70,0.5));
+  }
+  .logo-wrap svg .cable-blue {
+    stroke: var(--fg-accent-2);
+    filter: drop-shadow(0 0 0.5px rgba(0,0,0,0.35)) drop-shadow(0 0 6px rgba(74,144,217,0.5));
   }
   .logo-wrap svg .cable:nth-child(21) { animation-delay: 1.4s; }
   .logo-wrap svg .cable:nth-child(22) { animation-delay: 1.8s; }
@@ -201,7 +209,7 @@
 
   .desc em {
     font-style: italic;
-    color: var(--fg-accent);
+    color: #e8a020;
     font-family: var(--display);
     font-size: 0.95rem;
   }
@@ -238,12 +246,12 @@
     left: 0;
     width: 0;
     height: 1px;
-    background: var(--fg-accent);
+    background: #e8a020;
     transition: width 0.4s var(--ease-luxury);
   }
 
   .links a:hover {
-    color: var(--fg-accent-light);
+    color: #f0c060;
   }
 
   .links a:hover::after {
@@ -324,9 +332,9 @@
       <circle class="jack" cx="85" cy="62" r="2.5"/>
       <circle class="jack" cx="99" cy="62" r="2.5"/>
       <circle class="jack" cx="92" cy="84" r="2.5"/>
-      <!-- Patch cables (draw in last) -->
-      <path class="cable" d="M 17 84 C 24 109 56 109 63 62"/>
-      <path class="cable" d="M 46 62 C 53 82 78 82 85 62"/>
+      <!-- Patch cables (draw in last): red + blue -->
+      <path class="cable cable-red" d="M 17 84 C 24 109 56 109 63 62"/>
+      <path class="cable cable-blue" d="M 46 62 C 53 82 78 82 85 62"/>
     </svg>
   </div>
 
@@ -349,8 +357,7 @@
   <!-- Links -->
   <div class="links">
     <a href="https://github.com/panproto/panproto/" target="_blank" rel="noopener">Code</a>
-    <a href="https://panproto.dev/tutorial/" target="_blank" rel="noopener">Tutorial</a>
-    <a href="https://panproto.dev/dev-guide/" target="_blank" rel="noopener">Dev Guide</a>
+    <a href="https://panproto.dev/protolab/" target="_blank" rel="noopener">Lab</a>
   </div>
 
 </div>
